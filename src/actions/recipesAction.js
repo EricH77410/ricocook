@@ -40,6 +40,14 @@ export const editRecipe = (id, update)=>{
 }
 
 // ASYNC EDIT
+export const startEditRecipe = (id, recipe) => {
+  return (dispatch)=>{
+    return db.ref(`recettes/${id}`).update({...recipe})
+        .then(()=>{
+            dispatch(editRecipe(id,recipe))
+        });
+}
+}
 
 export const removeRecipe = (id)=>{
   return {

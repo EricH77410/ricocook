@@ -6,12 +6,13 @@ import RecipeForm from './RecipeForm';
 export class EditRecipe extends React.Component{
     
     constructor(props){
-        console.log(props)
         super(props);
     }
 
     onSubmit = (r) => {
-        console.log(r);
+        const id = this.props.match.params.id
+        this.props.startEditRecipe(id, r)
+        this.props.history.push('/')
     }
 
     render(){
