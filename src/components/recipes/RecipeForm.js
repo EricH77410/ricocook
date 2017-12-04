@@ -30,7 +30,7 @@ export default class RecipeForm extends React.Component {
 
     render(){
         return(
-            <div>
+            <div className="content-container">
                 <div className="card">
                     <form className="admin-form" onSubmit={this.onSubmit}>
                         <input

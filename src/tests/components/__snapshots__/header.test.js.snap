@@ -26,6 +26,13 @@ exports[`should render Header correctly 1`] = `
       >
         Admin
       </Link>
+      <Link
+        className="button button--link"
+        replace={false}
+        to="/add"
+      >
+        Add
+      </Link>
       <button
         className="button button--link"
         onClick={[Function]}

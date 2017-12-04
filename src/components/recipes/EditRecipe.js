@@ -18,7 +18,7 @@ export class EditRecipe extends React.Component{
     render(){
         return (
             <div>
-                Edit Recipe
+                <h3>Edit Recipe</h3>
                 <div className="container">
                     <RecipeForm
                         recette={this.props.recipe}

@@ -13,14 +13,7 @@
 @import './components/loading';
 
 /* TEMP */
-.card {
-	flex: 0 1 500px;
-	min-height: 300px;
-	/*border: 5px solid lightblue;*/
-	margin: 20px 15px;
-	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-	border-radius: 2px;
-}
+
 
 .image {
 	width: 100%;
@@ -67,8 +60,6 @@
 	width: 100%;
 	font-size: 18px;
 	padding: 5px;
-	border: 5px solid #69F0AE;
-	border-width: 1px 1px 5px 1px;
 	outline: none;
 	margin-bottom: 5px;
 	font-family: 'Roboto', sans-serif;
