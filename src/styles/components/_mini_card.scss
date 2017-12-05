@@ -1,0 +1,121 @@
+h1, h2, h3, h4, p {
+    font-size: inherit;
+}
+
+.mini-card {
+    padding: 65px 30px;
+    background-color: white;
+}
+
+.mini-card h1 {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: .035em;
+    text-transform: uppercase;
+    font-family: "Montserrat",sans-serif;
+}
+
+.mini-card li {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 200px;
+    height: 260px;
+    margin: 10px;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+}
+
+.mini-card .intro, .mini-card .info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 8px;
+    color: white;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.mini-card .card:hover .intro {
+    -webkit-filter: brightness(110%) hue-rotate(15deg);
+    filter: brightness(110%) hue-rotate(15deg);
+}
+
+.mini-card .intro {
+    padding: 20px;
+    padding-top: 30px;
+    background-image: -webkit-linear-gradient(top left, #cedce7, #596a72);
+    background-image: linear-gradient(to bottom right, #cedce7, #596a72);
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+}
+
+.mini-card .info {
+    overflow: auto;
+    padding: 20px;
+    font-size: 18px;
+    background-image: -webkit-linear-gradient(top left, #febbbb, #fe9090);
+    background-image: linear-gradient(to bottom right, #febbbb, #fe9090);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transform: translateX(100%) rotateY(180deg);
+    transform: translateX(100%) rotateY(180deg);
+}
+
+.mini-card .intro img {
+    width: 140px;
+    height: 140px;
+}
+
+.mini-card .intro h2 {
+    margin-top: 10px;
+    font-weight: light;
+    font-family: "Source Sans Pro",sans-serif;
+}
+
+.mini-card .info .publisher {
+    margin: .5em;
+    line-height: 1.2;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.mini-card .info a {
+    display: inline-block;
+    vertical-align: middle;
+    padding: .4em;
+}
+
+.mini-card .info .website::before {
+    content: "";
+}
+
+.mini-card .info a:before {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Icons;
+}
+
+.mini-card li:focus, .mini-card li:hover, .mini-card li.active {
+    z-index: 1;
+}
+
+.mini-card li:focus .intro, .mini-card li:hover .intro, .mini-card li.active .intro {
+    -webkit-transform: translateX(-100%) rotateY(-180deg);
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.mini-card li:focus .info, .mini-card li:hover .info, .mini-card li.active .info {
+    -webkit-transform: none;
+    transform: none;
+}

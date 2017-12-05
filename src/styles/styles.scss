@@ -11,6 +11,7 @@
 @import './components/visibility';
 @import './components/list';
 @import './components/loading';
+@import './components/mini_card';
 
 /* TEMP */
 
@@ -63,4 +64,12 @@
 	outline: none;
 	margin-bottom: 5px;
 	font-family: 'Roboto', sans-serif;
+}
+
+
+.display-list{
+	display :flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
 }

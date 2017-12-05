@@ -2,12 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import RecipeItem from '../components/recipes/RecipeItem'
 import getVisibleRecipes from '../selector/VisibleRecipes';
+import MiniCard from '../components/recipes/MiniCard';
 
 const RecipesList = (props) => {
     return (
-        <div>
+        <div className="display-list">
             {props.recipes.map((r)=>{
-                return <RecipeItem key={r.id} recipe={r}/>
+                return <MiniCard key={r.id} recette={r} id={r.id}/>
             })}
         </div>
     )
