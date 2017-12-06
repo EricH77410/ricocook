@@ -16,6 +16,9 @@ const MiniCard = ({id, recette}) => {
           	            <Link to={'/view/'+id} >
 						    <button className="btn btn-success">Voir...</button>
 						</Link>
+						<Link to={'/edit/'+id}>
+							<button className="btn btn-success">Edit</button>
+						</Link>
         	        </div>
       	        </li>
             </ul>
