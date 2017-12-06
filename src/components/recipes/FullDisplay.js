@@ -1,16 +1,18 @@
 import React from 'react'
 import { connect } from 'react-redux';
+import Video from './Video';
 
 const FullDisplay = (props) => {
     const ingredients = props.recette.ingredients.split(',').map((item, key) => <li key={key}>{item}</li>);
     const instructions = props.recette.instructions.split('\n').map((item, key) => <li key={key}>{item}</li>);
-    
+    const video = props.recette.video ? <Video url={props.recette.video}/>: ''
     return (
         <div className="content-container">
                 <div className="card">
             <div className="image">
                 <img src={props.recette.image} alt="" />
             </div>
+            {video}
             <div className="recette">
                 <h2>{props.recette.nom}</h2>
                 <h4>{props.recette.description}</h4>
