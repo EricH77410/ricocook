@@ -12,6 +12,7 @@
 @import './components/list';
 @import './components/loading';
 @import './components/mini_card';
+@import './components/video';
 
 /* TEMP */
 
@@ -30,6 +31,7 @@
 .recette {
 	padding: 0 20px;
 }
+
 .recette .liste-ingredients {
 	display: flex;
 	flex-wrap: wrap;
