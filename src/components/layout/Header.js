@@ -13,7 +13,7 @@ export const Header = ({ startLogout }) => (
                 <Link className="nav-link" to="/admin">Admin</Link>
                 <Link className="nav-link" to="/add">Add</Link>
                 <div className="logout">
-                    <button className="logout-link" onClick={startLogout}>Logout</button>
+                    <button className="logout-link nav-link" onClick={startLogout}>Logout</button>
                 </div>
                 
             </div>

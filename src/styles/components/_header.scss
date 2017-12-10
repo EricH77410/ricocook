@@ -31,14 +31,12 @@
 }
 
 .nav-link:hover {
-    box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.995);
+    text-shadow: 0 0 3px #FF0000
 
 }
 
 .logout-link {
-    color: white;
     border: none;
     background:none;
     font-family: 'Indie Flower', cursive;
-    font-size: 2.5rem;
 }
