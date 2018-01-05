@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 import { startLogout } from '../../actions/auth';
 
+import RecipeFilter from '../recipes/RecipeFilter';
+
 export const Header = ({ startLogout }) => (
     <div className="header">
         <div className="content-container">
@@ -12,10 +14,13 @@ export const Header = ({ startLogout }) => (
                 </Link>
                 <Link className="nav-link" to="/admin">Admin</Link>
                 <Link className="nav-link" to="/add">Add</Link>
+                
+                <div className="search-bar">
+                    <RecipeFilter />
+                </div>
                 <div className="logout">
                     <button className="logout-link nav-link" onClick={startLogout}>Logout</button>
                 </div>
-                
             </div>
         </div>
     </div>

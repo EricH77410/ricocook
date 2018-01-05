@@ -16,7 +16,7 @@
     display: inline-block;
     position: relative;
     vertical-align: middle;
-    width: 200px;
+    width: 300px;
     height: 260px;
     margin: 10px;
     -webkit-perspective: 800px;
@@ -37,6 +37,7 @@
     transition-property: transform;
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
+    text-align: center;
 }
 
 .mini-card .card:hover .intro {

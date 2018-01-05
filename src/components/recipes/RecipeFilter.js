@@ -9,7 +9,7 @@ export class RecipeFilter extends React.Component {
     render() {
         return (
             <div>
-                <input type="text" onChange={this.changeTerm}/>
+                <input type="text" onChange={this.changeTerm} placeholder="Rechercher"/>
             </div>
         )
     }
