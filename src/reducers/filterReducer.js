@@ -1,6 +1,7 @@
 
 const defaultState = {
-  text:''
+  text:'',
+  type:''
 }
 
 const filterReducer = (state = defaultState, action) => {
@@ -10,10 +11,14 @@ const filterReducer = (state = defaultState, action) => {
         ...state,
         text: action.text
       }
+    case 'SET_TYPE_FILTER':
+      return {
+        ...state,
+        type: action.text
+      }
       default:
         return state;
   }
-
 }
 
 export default filterReducer;

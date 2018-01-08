@@ -1,0 +1,17 @@
+.filter {
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    &__btn {
+        background-color: $off-white;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+}

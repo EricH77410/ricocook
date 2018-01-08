@@ -4,3 +4,10 @@ export const setTextFiltter = (text)=>{
     text
   }
 }
+
+export const setTypeFilter = (text) => {
+  return {
+    type: 'SET_TYPE_FILTER',
+    text
+  }
+}

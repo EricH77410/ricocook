@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { startLogout } from '../../actions/auth';
 
 import RecipeFilter from '../recipes/RecipeFilter';
+import FilterSelector from './FilterSelector';
 
 export const Header = ({ startLogout }) => (
     <div className="header">
@@ -23,6 +24,7 @@ export const Header = ({ startLogout }) => (
                 </div>
             </div>
         </div>
+        <FilterSelector />
     </div>
 )
 
